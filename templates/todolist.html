@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO LIST</title>
+</head>
+<body>
+    {% if request.user.is_authenticated %}
+        <h1> Wellcome {{ request.user }} :) </h1>
+        <a href="accounts/logout">Logout</a>
+        <div class="card>">
+        {% for todo in todos %}
+            <a class="card-body" href="/moreInfo/{{ todo.id }}"> {{ todo.task_name }} </a><br/>
+        {% endfor %}
+    </div>
+    {% else %}
+        <h1> Hello Worls :) </h1>
+        <a href="accounts/login">Login</a>
+        <a href="accounts/register">Register</a>
+    {% endif %}
+</body>
+</html>

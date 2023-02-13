@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MORE INFO</title>
+</head>
+<body>
+    <a href="/delete/{{ todo.id }}">delete</a>
+    <a href="/update/{{ todo.id }}">update</a>
+    <h3>{{ todo.task_description }}</h3>
+    <small>{{ todo.task_category }}</small><br/>
+    <small>{{ todo.task_label }}</small><br/>
+    <small>{{ todo.created_at }}</small><br/>
+    <small>{{ todo.task_status }}</small><hr/>
+</body>
+</html>
