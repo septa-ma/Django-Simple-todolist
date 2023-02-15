@@ -11,25 +11,6 @@ ITEM_SIZES = (
     ('C','Canceled'),
 )
 
-# class User(models.Model):
-#     # id = models.UUIDField(primary_key=True)
-#     first_name = models.CharField(max_length=20)
-#     last_name = models.CharField(max_length=20)
-#     username = models.CharField(max_length=300)
-#     # EmailField() email = models.EmailField()
-#     verify = models.BooleanField(default=False)
-#     # phone_number = models.BigIntegerField()
-#     token = models.CharField(max_length=300)
-#     created_at = models.DateTimeField(auto_now=True)
-#     updated_at = models.DateTimeField(auto_now=True)
-#     deleted_key = models.SmallIntegerField(default=10)
-
-#     def __str__(self):
-#         return self.username
-
-#     def was_published_recently(self):
-#         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
-
 class Todo(models.Model):
     task_category = models.CharField(max_length=50)
     task_label = models.CharField(max_length=50)
