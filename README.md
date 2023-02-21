@@ -22,9 +22,8 @@
 **use it just for test project.**
 - python manager.py runserver
 
-***use sqlight database just for test project.***
-
-*** good info ***
+**More Info:
+- use sqlight database just for test project.
 - all routes come in urls.py at projectName folder.
 - for each part of application we must make a new app.
 - when we make the app, it doesn't have urls.py so we must make this file.
